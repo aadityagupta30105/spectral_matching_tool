@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+
+# Ignore large spectral data
+data/
+usgs_splib07.zip
+
+# ignore database
+*.db
+
+# vscode
+.vscode/
