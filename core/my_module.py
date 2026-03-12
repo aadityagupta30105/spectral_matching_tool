@@ -6,7 +6,6 @@ from pathlib import Path
 
 numba_cache_flag = True
 
-# Resolve default database path relative to project root
 DEFAULT_DB_PATH = Path(__file__).resolve(
 ).parent.parent / "data" / "usgs_splib07a.db"
 

@@ -4,7 +4,10 @@ from core.config import DB_PATH
 
 class SpectralDatabase:
 
-    def __init__(self, db_path):
+    def __init__(self, db_path=None):
+        if db_path is None:
+            db_path = DB_PATH
+
         self.db = spectral.USGSDatabase(str(db_path))
 
     def get_all_minerals(self):
